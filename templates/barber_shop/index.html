@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brave Barber Shop</title>
+    <link rel="stylesheet" href="{% static '/styles/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static '/assets/logo/logo_barber.png' %}" alt="Logo da Brave Barber Shop" class="logo">
+            <h1>Brave Barber Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Agendar</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Equipe</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2>Bem-vindo à Barbearia</h2>
+            <p>Serviços de barbearia tradicionais com qualidade</p>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="photos">
+                <img src="{% static '/assets/barber1.png' %}" alt="Barbearia Vintage">
+                <img src="{% static '/assets/barber2.png' %}" alt="Barbearia Vintage">
+                <img src="{% static '/assets/barber3.png' %}" alt="Barbearia Vintage">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Barbearia Vintage</p>
+        </div>
+    </footer>
+</body>
+</html>

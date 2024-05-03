@@ -1,0 +1,103 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#D2B48C;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #FFFACD;
+    color: #FF0000;
+    padding: 20px 0;
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    left: 20px; /* Ajuste conforme necessário */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    height: 40px; /* Ajuste conforme necessário */
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    background-color: #FFFACD;
+    color: #FF0000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #FF0000;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Estilo para a seção do herói */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color:#000000;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Estilo para a seção da galeria */
+.gallery {
+    background-color:  #F5F5BA;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.gallery .photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery .photos img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #212121;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
