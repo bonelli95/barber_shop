@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brave Barber Shop</title>
+    <link rel="stylesheet" href="{% static '/styles/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="{% url 'index' %}">
+                <img src="{% static '/assets/logo/logo_barber.png' %}" alt="Logo da Brave Barber Shop" class="logo"></a>
+            <h1>Brave Barber Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Inicio</a></li>
+                    <li><a href="https://sites.appbarber.com.br/bravebarbershop-48tb">Agendar</a></li>
+                    <li><a href="{% url 'serviços' %}">Serviços</a></li>
+                    <li><a href="#">Equipe</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div class="services">
+            <img class="service-image" src="{% static 'assets/menu.jpg' %}" alt="Serviços">
+        </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Barbearia Vintage</p>
+        </div>
+    </footer>
+</body>
+</html>

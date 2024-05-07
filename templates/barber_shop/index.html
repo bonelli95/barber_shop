@@ -10,12 +10,13 @@
 <body>
     <header>
         <div class="container">
-            <img src="{% static '/assets/logo/logo_barber.png' %}" alt="Logo da Brave Barber Shop" class="logo">
+            <a href="{% url 'index' %}">
+                <img src="{% static '/assets/logo/logo_barber.png' %}" alt="Logo da Brave Barber Shop" class="logo"></a>
             <h1>Brave Barber Shop</h1>
             <nav>
                 <ul>
-                    <li><a href="">Agendar</a></li>
-                    <li><a href="#">Serviços</a></li>
+                    <li><a href="https://sites.appbarber.com.br/bravebarbershop-48tb">Agendar</a></li>
+                    <li><a href="{% url 'serviços' %}">Serviços</a></li>
                     <li><a href="#">Equipe</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
@@ -32,12 +33,22 @@
         <div class="container">
             <h2>Galeria</h2>
             <div class="photos">
-                <img src="{% static '/assets/barber1.png' %}" alt="Barbearia Vintage">
-                <img src="{% static '/assets/barber2.png' %}" alt="Barbearia Vintage">
-                <img src="{% static '/assets/barber3.png' %}" alt="Barbearia Vintage">
+                <div class="photo">
+                    <h3>Barbearia</h3>
+                    <img src="{% static '/assets/barber3.png.jpeg' %}" alt="Barbearia Vintage">
+                </div>
+                <div class="photo">
+                    <h3>Cortes</h3>
+                    <img src="{% static '/assets/barber2.png.jpeg' %}" alt="Barbearia Vintage">  
+                </div>
+                <div class="photo">
+                    <h3>Alguma coisa</h3>
+                    <img src="{% static '/assets/barber3.png.jpeg' %}" alt="Barbearia Vintage">
+                </div>
             </div>
         </div>
     </section>
+    
     <footer>
         <div class="container">
             <p>&copy; 2024 Barbearia Vintage</p>
