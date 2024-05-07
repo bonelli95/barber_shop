@@ -1,0 +1,17 @@
+{% load static %}
+<header>
+    <div class="container">
+        <a href="{% url 'index' %}">
+            <img src="{% static '/assets/logo/logo_barber.png' %}" alt="Logo da Brave Barber Shop" class="logo"></a>
+        <h1>Brave Barber Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="https://sites.appbarber.com.br/bravebarbershop-48tb">Agendar</a></li>
+                <li><a href="{% url 'serviços' %}">Serviços</a></li>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
