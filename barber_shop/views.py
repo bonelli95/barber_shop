@@ -5,3 +5,6 @@ def index(request):
 
 def serviços(request):
     return render(request, 'barber_shop/serviços.html')
+
+def imagens(request):
+    return render(request, 'barber_shop/imagens.html')
