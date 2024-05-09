@@ -6,8 +6,8 @@ class Fotografia(models.Model):
     CORTES = 'cortes'
 
     OPCOES_FOTOS = [
-        ("BARBEARIA", "Barbearia"),
-        ("CORTES", "Cortes"),
+        (BARBEARIA, "Barbearia"),
+        (CORTES, "Cortes"),
     ]
 
     titulo = models.CharField(max_length=50, null=False, blank=False, default="")
