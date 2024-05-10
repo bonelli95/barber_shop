@@ -10,7 +10,7 @@ class Fotografia(models.Model):
         (CORTES, "Cortes"),
     ]
 
-    titulo = models.CharField(max_length=50, null=False, blank=False, default="")
+    titulo = models.CharField(max_length=50, null=False, blank=True, default="")
     nome = models.CharField(max_length=20, null=False, blank=False)
     foto = models.ImageField(upload_to="fotos/", blank=True)
     categoria = models.CharField(max_length=20, choices=OPCOES_FOTOS, default="BARBEARIA")
