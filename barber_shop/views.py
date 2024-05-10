@@ -1,10 +1,18 @@
 from django.shortcuts import render
+from barber_shop.models import Fotografia
 
 def index(request):
-    return render(request, 'barber_shop/index.html')
+    fotografias = Fotografia.OPCOES_FOTOS
+    return render(request, 'barber_shop/index.html', {'fotografias': fotografias})
 
 def serviços(request):
     return render(request, 'barber_shop/serviços.html')
-
+    
 def imagens(request):
-    return render(request, 'barber_shop/imagens.html')
+    categoria = request.GET.get('tipo')
+    if categoria:
+        fotografia = Fotografia.objects.filter(categoria=categoria)
+    else:
+        fotografia = Fotografia.objects.all()
+    return render(request, 'barber_shop/imagens.html', {'fotografia': fotografia})
+
