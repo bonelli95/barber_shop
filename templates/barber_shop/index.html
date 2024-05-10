@@ -10,20 +10,19 @@
     <section class="gallery">
         <div class="container">
             <h2>Galeria</h2>
+            {% if fotografias %}
+            {% for categoria, _ in fotografias %}
             <div class="photos">
                 <div class="photo">
-                    <h3>Barbearia</h3><a href="{% url 'imagens' %}">
-                    <img src="{% static '/assets/galeria/barbearia/barber1.png.jpg' %}" alt="Barbearia Vintage"></a>
-                </div>
-                <div class="photo">
-                    <h3>Cortes</h3>
-                    <img src="{% static '/assets/galeria/cortes/corte3.png.jpeg' %}" alt="Barbearia Vintage">  
-                </div>
-                <div class="photo">
-                    <h3>Alguma coisa</h3>
-                    <img src="{% static '/assets/galeria/barbearia/barber3.png.jpeg' %}" alt="Barbearia Vintage">
+                    <h3>{{ categoria }}</h3>
+                    <a href="{% url 'imagens' %}?tipo={{ categoria }}">
+                        <img src="{% static 'assets/' %}{{ categoria }}.jpeg" alt="{{ categoria }}">
+                    </a>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}  
+            {% endif %}
         </div>
     </section>
 {% endblock %}

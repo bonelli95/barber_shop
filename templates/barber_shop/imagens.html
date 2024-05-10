@@ -2,25 +2,18 @@
 {% load static %}
 {% block content %}
 <section class="gallery">
-    <div class="container">
-        <h2>Barbearia</h2>
-        <div class="photos">
-            <div class="photo">
-                <img src="{% static '/assets/galeria/barbearia/barber1.png.jpg' %}" alt="Foto 1">
+    {% if foto.categoria == categoria %}
+        {% for imagem in fotografia %}
+            <div class="container">
+                <h2>{{ imagem.titulo }}</h2>
+                <div class="photos">
+                    <div class="photo">
+                        <img src="{{ imagem.foto.url }}" alt="{{ imagem.nome }}">
+                    </div>
+                </div>
             </div>
-            <div class="photo">
-                <img src="{% static '/assets/galeria/barbearia/barber2.png.jpeg' %}" alt="Foto 2">
-            </div>
-            <div class="photo">
-                <img src="{% static '/assets/galeria/barbearia/barber3.png.jpeg' %}" alt="Foto 2">
-            </div>
-            <div class="photo">
-                <img src="{% static '/assets/galeria/barbearia/barber2.png.jpeg' %}" alt="Foto 2">
-            </div>
-            <div class="photo">
-                <img src="{% static '/assets/galeria/barbearia/barber2.png.jpeg' %}" alt="Foto 2">
-            </div>
-        </div>
-    </div>
+        {% endfor %}
+    {% else %}    
+    {% endif %}
 </section>
 {% endblock %}
