@@ -16,3 +16,6 @@ def imagens(request):
         fotografia = Fotografia.objects.all()
     return render(request, 'barber_shop/imagens.html', {'fotografia': fotografia})
 
+def contactos(request):
+    return render(request, 'barber_shop/contactos.html')
+

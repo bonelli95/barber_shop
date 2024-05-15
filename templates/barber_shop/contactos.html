@@ -1,0 +1,58 @@
+{% extends 'barber_shop/base.html' %}
+{% load static %}
+{% block content %}
+</br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6225.178503263146!2d-9.128721337472692!3d38.727238378474205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933e512a4e887%3A0x706129faa241caa0!2sBrave%20Barber%20Shop!5e0!3m2!1spt-PT!2spt!4v1715760160645!5m2!1spt-PT!2spt" class="mapa-embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<section class="hero">
+  <div class="container">
+    <h1>Contatos e Redes Sociais</h1>
+  </div>
+</section>
+
+<section class="contato">
+  <div class="contato-coluna">
+    <div class="contato-item">
+      <div class="contato-item-flex">
+          <img src="{% static 'assets/logo/telefone.png' %}" alt="telefone">
+        </a>
+        <span><i><b>Telefone:</br>(351) 914 103 278</i></b></span>
+      </div>
+    </div>
+    <div class="contato-item">
+      <div class="contato-item-flex">
+        <a href="https://www.google.com/maps/place/Brave+Barber+Shop/@38.727732,-9.1333085,17z/data=!3m1!4b1!4m6!3m5!1s0xd1933e512a4e887:0x706129faa241caa0!8m2!3d38.7277278!4d-9.1307336!16s%2Fg%2F11jv1gn0zx?authuser=0&entry=ttu" target="_blank">
+          <img src="{% static 'assets/logo/loc.png' %}" alt="loc">
+        </a>
+        <a href="https://www.google.com/maps/place/Brave+Barber+Shop/@38.727732,-9.1333085,17z/data=!3m1!4b1!4m6!3m5!1s0xd1933e512a4e887:0x706129faa241caa0!8m2!3d38.7277278!4d-9.1307336!16s%2Fg%2F11jv1gn0zx?authuser=0&entry=ttu" target="_blank">
+        <span><i><b>Rua da Penha de França 213 A,</br>1170-182 Lisboa</i></b></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="contato-coluna">
+    <div class="contato-item">
+      <div class="contato-item-flex">
+        <a href="https://www.instagram.com/brave.barber.shop?igsh=bGFwOHl3dXhvNDB3" target="_blank">
+          <img src="{% static 'assets/logo/instagram.png' %}" alt="instagram">
+        </a>
+        <a href="https://www.instagram.com/brave.barber.shop?igsh=bGFwOHl3dXhvNDB3" target="_blank">
+          <span><i><b>Brave Barber Shop</i></b></span>
+        </a>
+      </div>
+    </div>
+    <div class="contato-item">
+      <div class="contato-item-flex">
+        <a href="mailto:barbeariabrave@gmail.com" target="_blank">
+          <img src="{% static 'assets/logo/email.png' %}" alt="email">
+        </a>
+        <a href="mailto:barbeariabrave@gmail.com" target="_blank">
+        <span><i><b>barbeariabrave@gmail.com</i></b></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock%}
