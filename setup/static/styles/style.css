@@ -108,6 +108,14 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+.footer-left {
+    text-align: left; /* Alinha o conteúdo do lado esquerdo */
+    padding-left: 10px;
+}
+.footer-right {
+    text-align: center; /* Alinha o conteúdo do lado direito */
+    margin-top: -50px;
+} 
 .services {
     background-color: #D2B48C; /* Cor de fundo */
     text-align: center; /* Centralizar conteúdo */
