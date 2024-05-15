@@ -16,10 +16,11 @@ header {
 .logo {
     position: absolute;
     left: 100px; /* Ajuste conforme necessário */
-    top: 10%; /* Centraliza verticalmente */
+    top: 9%; /* Centraliza verticalmente */
     transform: translateY(-50%);
     height: 100px; /* Ajuste conforme necessário */
     border-radius: 30%;
+    mix-blend-mode: multiply;
 }
 
 header h1 {
@@ -96,7 +97,7 @@ nav ul li a {
 
 .gallery .photos img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -121,3 +122,51 @@ footer {
     max-width: 100%; /* Largura máxima da imagem */
     max-height: 100%; /* Altura máxima da imagem */
 }
+.mapa-embed {
+    width: 1300px;
+    height: 400px;
+    object-fit: cover;
+}
+  
+/* Estilos para cada coluna de ícones */
+.contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between; /* add this line */
+    margin: 20px 0;
+}
+
+.contato-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    margin-right: 50px;
+    align-items: stretch
+}
+
+.contato-item img {
+    margin-right: 10px;
+}
+
+.contato-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+.contato-item span {
+    text-decoration: none; /* Remove link decoration if applicable */
+    color: #333; /* Set text color */
+    font-size: 16px; /* Set font size */
+    margin-left: 10px; /* Add margin to separate from icon */
+}
+.contato-item-flex {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Align items vertically */
+}
+.contato-item {
+    margin-bottom: 20px;
+}
+  
