@@ -19,3 +19,5 @@ def imagens(request):
 def contactos(request):
     return render(request, 'barber_shop/contactos.html')
 
+def equipe(request):
+    return render(request, 'barber_shop/equipe.html')

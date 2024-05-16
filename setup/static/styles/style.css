@@ -177,4 +177,18 @@ footer {
 .contato-item {
     margin-bottom: 20px;
 }
-  
+.equipe {
+    background-color: #D2B48C; /* Cor de fundo */
+    padding: 50px 0; /* Espaçamento interno */
+    display: flex;
+    align-items: center;
+}
+.equipe-image {
+    max-width: 28%; /* Largura máxima da imagem */
+    float: left; /* Alinhar a imagem à esquerda */
+    margin-right: 20px; /* Espaçamento à direita para separar o texto */
+    padding-left: 5px;
+}
+.equipe-text {
+    max-width: 50%; /* Largura máxima do texto */
+}
