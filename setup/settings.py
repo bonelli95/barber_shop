@@ -29,7 +29,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://barbeariabrave-101c151bf013.herokuapp.com', 
+    'barbeariabrave-101c151bf013.herokuapp.com', 
     '127.0.0.1',
 ]
 
