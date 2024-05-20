@@ -1,8 +1,8 @@
 <b>This repository contains the source code of the website developed for the Barbershop 'Brave Barber Shop'. The website was created with the aim of:</b>
 
-<i><p>»To present the services offered by the barbershop.</p>
-<p>»Allow customers to schedule appointments online.</p>
-<p>»Promote the barbershop online and attract new customers.</p></i>
+<i>»To present the services offered by the barbershop.</br>
+»Allow customers to schedule appointments online.</br>
+»Promote the barbershop online and attract new customers.</br></i>
 
 <strong>Languages and Tools:</strong></br>
 <i>-Markup and style Languages: HTML5, CSS3</br>
