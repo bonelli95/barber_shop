@@ -230,6 +230,11 @@ footer {
         padding: 20px 0;
     }
 
+    .service-image {
+        max-width: 80%;
+        margin-right: 0;
+    }
+    
     .mapa-embed {
         height: 300px;
     }
@@ -268,6 +273,10 @@ footer {
 
     .gallery .photos .photo {
         flex: 0 1 100%;
+    }
+    
+    .service-image {
+        max-width: 100%;
     }
 
     .contato {
