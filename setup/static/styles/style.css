@@ -2,119 +2,143 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#D2B48C;
+    background-color: #D2B48C;
 }
+
 header {
     background-color: #FFFACD;
     color: #8B4513;
     padding: 20px 0;
     text-align: center;
+    position: relative;
 }
+
 .logo {
     position: absolute;
-    left: 100px;
-    top: 9%;
+    left: 10px;
+    top: 50%;
     transform: translateY(-50%);
-    height: 100px;
+    height: 80px;
     border-radius: 30%;
     mix-blend-mode: multiply;
 }
+
 header h1 {
     font-size: 36px;
     margin: 0;
 }
+
 nav {
     background-color: #FFFACD;
     color: #8B4513;
     text-align: center;
     padding: 10px 0;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
 }
+
 nav ul li a {
     color: #8B4513;
     text-decoration: none;
     margin: 0 15px;
 }
+
 .hero {
     background-image: url('hero-image.jpg');
     background-size: cover;
     background-position: center;
-    color:#8B4513;
+    color: #8B4513;
     text-align: center;
     padding: 100px 0;
 }
+
 .hero h2 {
     font-size: 36px;
     margin: 0;
 }
+
 .hero p {
     font-size: 18px;
     margin: 20px 0;
 }
+
 .gallery {
-    background-color:  #F5F5BA;
+    background-color: #F5F5BA;
     padding: 50px 0;
     text-align: center;
 }
+
 .gallery h2 {
     font-size: 24px;
     margin: 0;
 }
+
 .gallery .photos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
 }
+
 .gallery .photos .photo {
     flex: 0 1 calc(33.33% - 20px);
     margin: 10px;
 }
+
 .gallery .photos img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
+
 footer {
     background-color: #212121;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
+
 .footer-left {
     text-align: left;
     padding-left: 10px;
 }
+
 .footer-right {
     text-align: center;
     margin-top: -50px;
-} 
+}
+
 .services {
     background-color: #D2B48C;
     text-align: center;
     padding: 50px 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
 .services .service-image {
     max-width: 100%;
     max-height: 100%;
 }
+
 .mapa-embed {
-    width: 1300px;
+    width: 100%;
+    max-width: 1300px;
     height: 400px;
     object-fit: cover;
 }
-  .contato {
+
+.contato {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -122,47 +146,143 @@ footer {
     align-content: space-between;
     margin: 20px 0;
 }
+
 .contato-coluna {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 10px;
     margin-right: 50px;
-    align-items: stretch
+    align-items: stretch;
 }
+
 .contato-item img {
     margin-right: 10px;
 }
+
 .contato-item a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
 }
+
 .contato-item span {
     text-decoration: none;
     color: #333;
     font-size: 16px;
     margin-left: 10px;
 }
+
 .contato-item-flex {
     display: flex;
     align-items: center;
 }
+
 .contato-item {
     margin-bottom: 20px;
 }
+
 .equipe {
     background-color: #D2B48C;
     padding: 50px 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
+
 .equipe-image {
-    max-width: 28%;
-    float: left;
+    max-width: 100%;
     margin-right: 20px;
     padding-left: 5px;
 }
+
 .equipe-text {
-    max-width: 50%;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        left: 10px;
+        top: 10px;
+        transform: none;
+        height: 60px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .gallery .photos .photo {
+        flex: 0 1 calc(50% - 20px);
+    }
+
+    .services {
+        padding: 20px 0;
+    }
+
+    .mapa-embed {
+        height: 300px;
+    }
+
+    .contato-coluna {
+        margin-right: 0;
+    }
+
+    .equipe {
+        flex-direction: column;
+    }
+
+    .equipe-image {
+        max-width: 80%;
+        margin-right: 0;
+    }
+
+    .equipe-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .gallery .photos .photo {
+        flex: 0 1 100%;
+    }
+
+    .contato {
+        flex-direction: column;
+    }
+
+    .contato-coluna {
+        margin: 10px 0;
+    }
+
+    .equipe-image {
+        max-width: 100%;
+    }
+
+    .equipe-text {
+        max-width: 100%;
+    }
 }
