@@ -205,7 +205,7 @@ footer {
 @media (max-width: 768px) {
     .logo {
         left: 10px;
-        top: 30px;
+        top: 70px;
         transform: none;
         height: 60px;
     }
