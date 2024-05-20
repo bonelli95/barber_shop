@@ -205,9 +205,9 @@ footer {
 @media (max-width: 768px) {
     .logo {
         left: 10px;
-        top: 30px;
+        top: 10px;
         transform: none;
-        height: 40px;
+        height: 60px;
     }
 
     .hero {
