@@ -230,7 +230,7 @@ footer {
         padding: 20px 0;
     }
 
-    .service-image {
+    .services .service-image {
         max-width: 80%;
         margin-right: 0;
     }
@@ -275,7 +275,7 @@ footer {
         flex: 0 1 100%;
     }
     
-    .service-image {
+    .services .service-image {
         max-width: 100%;
     }
 
